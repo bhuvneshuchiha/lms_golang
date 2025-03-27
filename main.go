@@ -70,4 +70,7 @@ func main() {
 		fmt.Printf("Book:- %d , Author : %s , Title : %s\n", k+1, v.Author, v.Title)
 	}
 	lib.ShowBooksUsers()
+
+	status := lib.HandleBookTransactions("1", "return")
+	fmt.Printf("Status :-> %s ", status)
 }
